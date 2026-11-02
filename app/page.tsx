@@ -1,27 +1,40 @@
 'use client';
 
 import styled from 'styled-components';
+import Header from '@/components/layout/Header';
+import ContentSection from '@/components/sections/ContentSection';
 
-const Title = styled.h1`
-  font-size: 3rem;
-  color: #3b82f6;
-  text-align: center;
-  margin-top: 20vh;
-  font-weight: bold;
+const MainContainer = styled.main`
+  max-width: 1920px;
+  width: 100%;
+  height: 100%;
+
+  padding-top: 7rem;
+
+  background-color: #FDFDFC;
+
+  overflow-y: visible
 `;
 
-const Container = styled.main`
+const ContentWrapper = styled.div`
+  max-width: 700px;
+  width: 100%;
+  height: 920px;
+  
+  margin: 0 auto;
+
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f8fafc;
-`;
+  flex-direction: column;
+  justify-content: space-between;
+`
 
 export default function Home() {
   return (
-    <Container>
-      <Title>Hello World</Title>
-    </Container>
+    <MainContainer>
+      <ContentWrapper>
+        <Header />
+        <ContentSection />
+      </ContentWrapper>
+    </MainContainer>
   );
 }
