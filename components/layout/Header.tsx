@@ -1,8 +1,9 @@
 import { 
     HeaderContainer,
+    HeaderWrapper,
     MyNameTitle,
     MyjobTitle,
-    ProfileImage
+    ProfileImage,
 } from '@/styles/header.styles';
 
 
@@ -11,8 +12,11 @@ export default function Header() {
     return (
         <>
             <HeaderContainer>
-                <MyNameTitle href="/">ChaeSeong</MyNameTitle>
-                <MyjobTitle>React Developer</MyjobTitle>
+                <HeaderWrapper>
+                    <MyNameTitle href="/">ChaeSeong</MyNameTitle>
+                    <MyjobTitle>React Developer</MyjobTitle>
+                </HeaderWrapper>
+                
                 <ProfileImage></ProfileImage>
             </HeaderContainer>
         </>
