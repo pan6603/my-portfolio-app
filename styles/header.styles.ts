@@ -9,7 +9,18 @@ export const HeaderContainer = styled.header`
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 8px;
+
+    padding-left: 16px;
+
+`
+
+export const HeaderWrapper = styled.div`
+    max-width: 700px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
 `
 
 export const MyNameTitle = styled(Link)`
@@ -23,11 +34,12 @@ export const MyNameTitle = styled(Link)`
 
 
 export const MyjobTitle = styled.span`
-    font-weight: 500;
-    font-size: 15px;
+    font-family: 'Inter', 'Pretendard', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
     line-height: 1.75rem;
 
-    color: #404752;
+    color: #717985;
 `
 
 export const ProfileImage = styled.div`
