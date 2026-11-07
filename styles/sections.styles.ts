@@ -7,8 +7,7 @@ export const ContentSectionContainer = styled.section`
 
     display: flex;
     flex-direction: column;
-
-    justify-content: space-between;
+    gap: 60px;
 `
 
 
@@ -205,6 +204,8 @@ export const MoreSectionContainer = styled.section`
     display: flex;
     flex-direction: column;
     gap: 8px;
+
+    padding-left: 16px;
 `
 
 export const MoreTitle = styled.span`
@@ -214,7 +215,6 @@ export const MoreTitle = styled.span`
     line-height: 1.75rem;
 
     color: #121C2C;
-    padding-left: 16px;
 `
 
 export const MoreDescription = styled.p`
@@ -225,4 +225,11 @@ export const MoreDescription = styled.p`
 
     color: #717985;
     padding-left: 16px;
+`
+
+
+export const SnsFlex = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 16px;
 `
