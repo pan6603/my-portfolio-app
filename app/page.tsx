@@ -19,13 +19,14 @@ const MainContainer = styled.main`
 const ContentWrapper = styled.div`
   max-width: 700px;
   width: 100%;
-  height: 1500px;
+  height: 1000px;
   
   margin: 0 auto;
 
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 60px;
+
 `
 
 export default function Home() {
